@@ -120,10 +120,10 @@
                 if (resposta.ok) {
                     window.location.href = '/agendar';
                 } else {
-                    document.getElementById('mensagem-erro').textContent = dados.erro || 'Erro no login';
+                    document.getElementById('mensagem-erro').textContent = dados.error || 'Erro no login';
                     document.getElementById('mensagem-erro').style.display = 'block';
                 }
-            } catch (erro) {
+            } catch (error) {
                 document.getElementById('mensagem-erro').textContent = 'Erro de conexão';
                 document.getElementById('mensagem-erro').style.display = 'block';
             } finally {
